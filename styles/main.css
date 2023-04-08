@@ -1,0 +1,39 @@
+.header {
+}
+.header--innner {
+  display: flex;
+  flex-direction: row;
+  padding: 40px 0;
+}
+.logo__cotnainer {
+  margin-right: 256px;
+}
+.logo {
+}
+.nav__container {
+}
+.burger__menu--btn {
+}
+.burger__menu--line {
+}
+.nav {
+}
+.nav__menu {
+  display: flex;
+}
+.nav--list__item {
+  margin-right: 60px;
+}
+.nav--list__item:last-child {
+  margin-right: 0;
+}
+.nav--link {
+  font-family: "Oranienbaum";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+}
+.nav--link:hover {
+  color: #e04504;
+}

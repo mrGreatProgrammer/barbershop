@@ -22,3 +22,12 @@ li {
   padding: 0 130px;
   margin: 0 auto;
 }
+section {
+  min-height: 100vh;
+}
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+}

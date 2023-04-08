@@ -5,17 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Парекмахерская</title>
-    <link rel="stylesheet" href="./styles/styles.css" />
-    <link rel="stylesheet" href="./styles/main.css" />
-    <link rel="stylesheet" href="./styles/adaptive.css" />
-    <link rel="stylesheet" href="./styles/animation.css" />
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Oranienbaum&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Oranienbaum&family=Prata&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./styles/aquarelle.css" />
+    <!-- STYLES -->
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/adaptive.css" />
+    <link rel="stylesheet" href="./styles/animation.css" />
   </head>
   <body>
     <header class="header">
@@ -54,9 +56,95 @@
       </div>
     </header>
     <main class="main">
-      <section id="main" class="section">
-        <div>
-          <h1>Парикмахерская</h1>
+      <section id="main" class="section main-section">
+        <div class="container">
+          <div class="main__section--inner">
+            <div class="main__section--top__content-container relative">
+              <div class="main__section--txt__container">
+                <h1>Парикмахерская</h1>
+                <h2>
+                  Создадим образ, который идеально подчеркнет ваш характер.
+                </h2>
+              </div>
+              <div class="main__section--img__container-blot_one absolute">
+                <img src="/images/Клякса слева.svg" alt="blot left" />
+              </div>
+              <div class="main__section--img__container-blot_two absolute">
+                <img src="/images/Клякса справа.svg" alt="blot right" />
+              </div>
+              <div class="main__section--img__container-crystal absolute">
+                <img src="./images/кристалл.png" alt="cristal" />
+              </div>
+            </div>
+            <div class="main__section-cards__container">
+              <ul>
+                <li>
+                  <article class="main__section-card">
+                    <div class="main__section-card--img_container">
+                      <img
+                        src="./images/cards_icons/икона женщины.svg"
+                        alt="woman"
+                        class="main__section-card--img"
+                      />
+                    </div>
+                    <p class="main__section-card--txt">Многолетний опыт</p>
+                  </article>
+                </li>
+                <li>
+                  <article class="main__section-card">
+                    <div class="main__section-card--img_container">
+                      <img
+                        src="./images/cards_icons/икона часов.svg"
+                        alt="clock"
+                        class="main__section-card--img"
+                      />
+                    </div>
+                    <p class="main__section-card--txt">
+                      Запись ведётся в любое удобное для вас время
+                    </p>
+                  </article>
+                </li>
+                <li>
+                  <article class="main__section-card">
+                    <div class="main__section-card--img_container">
+                      <img
+                        src="./images/cards_icons/икона местоположения.svg"
+                        alt="location"
+                        class="main__section-card--img"
+                      />
+                    </div>
+                    <p class="main__section-card--txt">
+                      Удобное расположение в городе
+                    </p>
+                  </article>
+                </li>
+                <li>
+                  <article class="main__section-card">
+                    <div class="main__section-card--img_container">
+                      <img
+                        src="./images/cards_icons/икона денег.svg"
+                        alt="low price"
+                        class="main__section-card--img"
+                      />
+                    </div>
+                    <p class="main__section-card--txt">Низкие цены</p>
+                  </article>
+                </li>
+                <li>
+                  <article class="main__section-card">
+                    <div class="main__section-card--img_container">
+                      <img
+                        src="./images/cards_icons/икона красок.svg"
+                        alt="paint"
+                        class="main__section-card--img"
+                      />
+                    </div>
+                    <p class="main__section-card--txt">Качество</p>
+                  </article>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
       <section class="section"></section>

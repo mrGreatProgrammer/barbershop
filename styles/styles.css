@@ -31,3 +31,40 @@ section {
 .absolute {
   position: absolute;
 }
+.footer {
+  background-color: #fff;
+  padding: 40px 0 10px;
+  display: inline-block;
+}
+
+.footer__content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 14px 0;
+  border-top: 1px solid #000;
+}
+
+.logo__footer {
+  margin-right: 233px;
+}
+
+.footer__item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__menu-list {
+  display: flex;
+  justify-content: s;
+  gap: 60px;
+  padding-right: 20px;
+}
+
+.footer__menu-link {
+  font-family: "Oranienbaum";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}

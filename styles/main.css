@@ -123,7 +123,7 @@
 .main__section-cards__container {
   margin-top: 20px;
 }
-.advantages_title{
+.advantages_title {
   display: none;
 }
 .main__section-cards__container > ul {
@@ -158,7 +158,7 @@
 .icon_color {
   fill: #f2f3f4;
 }
-.icon_color-stroke{
+.icon_color-stroke {
   stroke: #f2f3f4;
 }
 .main__section-card--txt {
@@ -282,7 +282,8 @@
   margin-right: 54px;
 }
 
-.service__lists {}
+.service__lists {
+}
 
 .service__list--item {
   display: flex;
@@ -331,7 +332,8 @@
   margin-bottom: 0;
 }
 
-.service__arrow {}
+.service__arrow {
+}
 
 .price__item--name {
 }
@@ -347,7 +349,49 @@
   border-radius: 4px;
 }
 
-.map__block {}
+/* SECTION MASTERS */
+.slider__container{
+  height: 550px;
+}
+.oneslide {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.slider-img__contaner {
+  margin-right: 30px;
+}
+.slider-txt__container {
+}
+.slider-master_name {
+  font-family: "Oranienbaum";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 33px;
+  line-height: 38px;
+}
+.slider-master_prof {
+  font-family: "Oranienbaum";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+}
+.slider-txt__container > p {
+  font-family: "Oranienbaum";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+.slider-txt__container > a {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.map__block {
+}
 
 .card__info {
   background-color: white;
@@ -372,7 +416,7 @@ iframe {
 }
 
 .text__logo {
-  font-family: 'Oranienbaum';
+  font-family: "Oranienbaum";
 }
 
 .card__info--about {
@@ -381,11 +425,10 @@ iframe {
 .card__info--about-items {
   display: flex;
   flex-direction: column;
-
 }
 
 .card__info--about-item {
-  font-family: 'Oranienbaum';
+  font-family: "Oranienbaum";
   margin-bottom: 24px;
   font-size: 14px;
   line-height: 16px;

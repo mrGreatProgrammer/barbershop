@@ -18,7 +18,8 @@
   height: 80px;
 }
 
-.nav__container {}
+.nav__container {
+}
 
 .burger__menu--btn {
   border: none;
@@ -79,7 +80,7 @@
   padding-bottom: 253px;
 }
 
-.main__section--txt__container>h1 {
+.main__section--txt__container > h1 {
   font-family: "Aquarelle";
   font-style: normal;
   font-weight: 500;
@@ -87,7 +88,7 @@
   line-height: 145px;
 }
 
-.main__section--txt__container>h2 {
+.main__section--txt__container > h2 {
   margin-top: 15px;
   font-family: "Oranienbaum";
   font-style: normal;
@@ -98,36 +99,42 @@
 
 .main__section--img__container-crystal {
   display: block;
-  top: -120px;
-  right: 80px;
+  top: 0px;
+  right: 150px;
   z-index: -1;
 }
 
 .main__section--img__container-blot_one {
-  top: 150px;
-  left: 220px;
+  top: 250px;
+  left: 270px;
   z-index: -2;
 }
 
 .main__section--img__container-blot_two {
-  top: -100px;
-  right: 37%;
+  top: 50px;
+  right: 43%;
   z-index: -2;
   display: block;
+}
+.main__section--img__container-blot_two > img {
+  width: 95%;
 }
 
 .main__section-cards__container {
   margin-top: 20px;
 }
-
-.main__section-cards__container>ul {
+.advantages_title{
+  display: none;
+}
+.main__section-cards__container > ul {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.main__section-cards__container>ul>li {}
+.main__section-cards__container > ul > li {
+}
 
 .main__section-card {
   max-width: 225px;
@@ -141,10 +148,19 @@
   justify-content: center;
 }
 
-.main__section-card--img_container {}
+.main__section-card--img_container {
+}
 
-.main__section-card--img {}
-
+.main__section-card--img {
+  width: 68px;
+  height: 68px;
+}
+.icon_color {
+  fill: #f2f3f4;
+}
+.icon_color-stroke{
+  stroke: #f2f3f4;
+}
 .main__section-card--txt {
   font-family: "Oranienbaum";
   font-style: normal;
@@ -154,8 +170,8 @@
   text-align: center;
   color: #f2f3f4;
   margin-top: 10px;
+  max-width: 174px;
 }
-
 
 /* PARTNERS */
 
@@ -172,17 +188,17 @@
 }
 
 .title__top {
-  font-family: 'Aquarelle';
+  font-family: "Aquarelle";
   font-weight: 500;
   font-size: 72px;
-  color: #E04504;
+  color: #e04504;
   position: absolute;
   bottom: 0;
   opacity: 0.4;
 }
 
 .title__bottom {
-  font-family: 'Prata';
+  font-family: "Prata";
   font-style: normal;
   font-weight: 400;
   font-size: 48px;
@@ -196,7 +212,7 @@
 }
 
 .safety__text {
-  font-family: 'Oranienbaum';
+  font-family: "Oranienbaum";
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
@@ -208,7 +224,8 @@
   position: relative;
 }
 
-.masks {}
+.masks {
+}
 
 .gloves {
   position: absolute;
@@ -237,20 +254,24 @@
   margin-right: 0;
 }
 
-
 /* SERVICES AND PRICES */
 
-.services-and-prices {}
+.services-and-prices {
+  display: none;
+}
 
 .submenu {
   display: none;
 }
 
-.title__block {}
+.title__block {
+}
 
-.title__top {}
+.title__top {
+}
 
-.title__bottom {}
+.title__bottom {
+}
 
 .services-and-prices--inner {
   margin-top: 44px;
@@ -263,23 +284,19 @@
 }
 
 .service__lists {
-
 }
 
 .service__list--item {
   display: flex;
   justify-content: space-between;
-
 }
 
 .service__list {
-  font-family: 'Oranienbaum';
+  font-family: "Oranienbaum";
   margin-bottom: 30px;
 }
 
-.service__list--item
-
-.service__list:last-child {
+.service__list--item .service__list:last-child {
   margin-bottom: 0;
 }
 
@@ -291,7 +308,7 @@
 }
 
 .price__list {
-  font-family: 'Oranienbaum';
+  font-family: "Oranienbaum";
   font-size: 18px;
   display: flex;
   flex-direction: column;
@@ -313,9 +330,11 @@
 .service__arrow {
 }
 
-.price__item--name {}
+.price__item--name {
+}
 
-.price__item--price {}
+.price__item--price {
+}
 
 .services-and-prices--img-block {
   margin-left: 55px;

@@ -1,39 +1,65 @@
 /* FOR ADAPTIVE */
+
+@media screen and (max-width: 1100px) {
+  .safety__inner {
+    display: block;
+  }
+
+  .safety__img--block {
+    display: flex;
+  }
+
+  .gloves,
+  .antiseptic {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 780px) {
   .container {
     padding: 0 40px;
   }
+
   .header--innner {
     padding: 16px 0px 10px 0px;
     align-items: center;
     justify-content: space-between;
   }
+
   .logo__cotnainer {
     margin: 0;
   }
+
   .logo {
     width: 50px;
     height: 50px;
   }
+
   .burger__menu--btn {
     display: block;
   }
+
   .burger__menu--line:first-child {
     top: 0;
   }
+
   .burger__menu--line:nth-child(2) {
     width: 20px;
     top: 10px;
   }
+
   .burger__menu--line:last-child {
     top: 20px;
   }
+
   .main__section-cards__container {
     display: none;
   }
+
   .nav {
     display: none;
   }
+
   /* SECTIONS */
   /* MAIN SECTION */
   .main__section--top__content-container {
@@ -62,8 +88,67 @@
   .main__section--img__container-blot_one {
     display: none;
   }
-  .main__section--img__container-blot_two{
+  .main__section--img__container-blot_two {
     top: -200px;
     right: -100px;
+  }
+
+  /* PARTNERS */
+  .safety__img--block {
+    display: none;
+  }
+
+  .title__top {
+    font-size: 50px;
+  }
+
+  .title__bottom {
+    font-size: 30px;
+  }
+
+  .our__partners--img {
+    margin-right: 25px;
+    width: 180px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  /* PARTNERS */
+  .title__top {
+    font-size: 50px;
+  }
+
+  .title__bottom {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  /* PARTNERS */
+  .title__top {
+    font-size: 26px;
+  }
+
+  .title__bottom {
+    font-size: 18px;
+  }
+
+  .safety__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .our__partners--img {
+    max-width: 91px;
+    margin-right: 10px;
+  }
+
+  .our__partners--img:last-child {
+    margin-right: 0;
+  }
+
+  .partners {
+    margin-bottom: 30px;
   }
 }

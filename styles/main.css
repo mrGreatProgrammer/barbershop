@@ -158,6 +158,11 @@
 
 
 /* PARTNERS */
+
+.partners {
+  margin-bottom: 50px;
+}
+
 .safety {
   margin-bottom: 50px;
 }
@@ -217,10 +222,6 @@
   right: 30%;
 }
 
-.our__partners {
-
-}
-
 .our__partners--imgs {
   margin-top: 40px;
   display: flex;
@@ -234,4 +235,88 @@
 
 .our__partners--img:last-child {
   margin-right: 0;
+}
+
+
+/* SERVICES AND PRICES */
+
+.services-and-prices {}
+
+.submenu {
+  display: none;
+}
+
+.title__block {}
+
+.title__top {}
+
+.title__bottom {}
+
+.services-and-prices--inner {
+  margin-top: 44px;
+  display: flex;
+}
+
+.services {
+  width: 252px;
+  margin-right: 54px;
+}
+
+.service__lists {
+
+}
+
+.service__list--item {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.service__list {
+  font-family: 'Oranienbaum';
+  margin-bottom: 30px;
+}
+
+.service__list--item
+
+.service__list:last-child {
+  margin-bottom: 0;
+}
+
+.line__middle {
+  height: 429px;
+  background: #000;
+  width: 1px;
+  margin-right: 57px;
+}
+
+.price__list {
+  font-family: 'Oranienbaum';
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  width: 359px;
+}
+
+.price__item {
+  border-bottom: 1px solid #000000;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.price__item:last-child {
+  margin-bottom: 0;
+}
+
+.service__arrow {
+}
+
+.price__item--name {}
+
+.price__item--price {}
+
+.services-and-prices--img-block {
+  margin-left: 55px;
 }

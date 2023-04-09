@@ -13,7 +13,37 @@
   .antiseptic {
     display: none;
   }
+
+  /* SERVICES AND PRICES */
+  .line__middle {
+    display: none;
+  }
+
+  .price__list {
+    order: 2;
+  } 
+
+  .services-and-prices--img-block {
+    margin-left: 0;
+    margin-right: 40px;
+  }
+
+  .services-and-prices--inner {
+    flex-wrap: wrap;
+  }
+
+  .price__list {
+    width: 700px;
+    margin-top: 20px;
+  }
 }
+
+/* @media screen and (max-width: 1023px) {
+  .services-and-prices--inner {
+    flex-wrap: nowrap;
+  }
+} */
+
 
 @media screen and (max-width: 780px) {
   .container {

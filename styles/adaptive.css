@@ -36,17 +36,34 @@
   }
   /* SECTIONS */
   /* MAIN SECTION */
-  .main__section--txt__container {
+  .main__section--top__content-container {
+    width: 100%;
     background: linear-gradient(
       180deg,
       rgba(224, 69, 4, 0.6) 0%,
       rgba(224, 69, 4, 0) 100%
     );
   }
-  .main__section--img__container-crystal{
+  .main__section--txt__container {
+    padding-top: 84px;
+    padding-bottom: 114px;
+  }
+  .main__section--txt__container > h1 {
+    font-size: 42px;
+    line-height: 61px;
+    text-align: center;
+  }
+  .main__section--txt__container > h2 {
     display: none;
   }
-  ..main__section--img__container-blot_one{
+  .main__section--img__container-crystal {
     display: none;
+  }
+  .main__section--img__container-blot_one {
+    display: none;
+  }
+  .main__section--img__container-blot_two{
+    top: -200px;
+    right: -100px;
   }
 }

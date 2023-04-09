@@ -5,3 +5,17 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.container {
+  max-width: 1120px;
+  margin: 0;
+}
+.footer {
+  background-color: #fff;
+  padding: 43px 0 37px;
+}
+
+.footer__menu {
+  display: flex;
+  justify-content: space-between;
+}

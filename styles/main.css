@@ -240,17 +240,21 @@
 
 /* SERVICES AND PRICES */
 
-.services-and-prices {}
+.services-and-prices {
+  margin-bottom: 50px;
+}
 
 .submenu {
   display: none;
 }
 
-.title__block {}
+.submenu__item {
+  margin-bottom: 20px;
+}
 
-.title__top {}
-
-.title__bottom {}
+.item__active span {
+  width: 50px;
+}
 
 .services-and-prices--inner {
   margin-top: 44px;
@@ -262,14 +266,12 @@
   margin-right: 54px;
 }
 
-.service__lists {
-
-}
+.service__lists {}
 
 .service__list--item {
   display: flex;
   justify-content: space-between;
-
+  margin-bottom: 30px;
 }
 
 .service__list {
@@ -277,10 +279,13 @@
   margin-bottom: 30px;
 }
 
-.service__list--item
-
 .service__list:last-child {
   margin-bottom: 0;
+}
+
+.arrow-up,
+.arrow-down {
+  cursor: pointer;
 }
 
 .line__middle {
@@ -310,8 +315,7 @@
   margin-bottom: 0;
 }
 
-.service__arrow {
-}
+.service__arrow {}
 
 .price__item--name {}
 
@@ -319,4 +323,67 @@
 
 .services-and-prices--img-block {
   margin-left: 55px;
+}
+
+.services-and-prices--img-block img {
+  border-radius: 4px;
+}
+
+.map__block {}
+
+.card__info {
+  background-color: white;
+  position: absolute;
+  top: 107px;
+  left: 287px;
+  width: 260px;
+  border-radius: 4px;
+  box-shadow: 3px 5px 15px rgba(224, 69, 4, 0.5);
+  padding: 27px;
+  z-index: 100;
+}
+
+iframe {
+  width: 100%;
+  height: 100vh;
+}
+
+.logo__block {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.text__logo {
+  font-family: 'Oranienbaum';
+}
+
+.card__info--about {
+}
+
+.card__info--about-items {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.card__info--about-item {
+  font-family: 'Oranienbaum';
+  margin-bottom: 24px;
+  font-size: 14px;
+  line-height: 16px;
+  max-width: 156px;
+  border-top: 1px solid #000;
+  padding-top: 14px;
+}
+
+.geo {
+  list-style-image: url(../images/icons8-map-marker-100\ 1.png);
+}
+
+.time {
+  list-style-image: url(../images/icons8-clock-100\ 1.png);
+}
+
+.phone {
+  list-style-image: url(../images/icons8-phonelink-ring-100\ 1.png);
 }

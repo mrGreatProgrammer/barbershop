@@ -1,0 +1,37 @@
+.slider {
+  width: 100%;
+  margin: 100px auto;
+}
+
+.slick-slide {
+  margin: 0px 10px;
+}
+.slick-slider, .slick-list{
+  border-radius: 12px;
+}
+.slick-slide img {
+  width: 100%;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: #fff;
+}
+
+.slick-slide {
+  transition: all ease-in-out 0.3s;
+  opacity: 0.2;
+  border-radius: 8px;
+  /* width: 200px!important; */
+}
+.slick-slide>img{
+border-radius: 8px;
+}
+.slick-active {
+  opacity: 0.5;
+}
+
+.slick-current {
+  opacity: 1;
+}
+

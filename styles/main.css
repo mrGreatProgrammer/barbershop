@@ -98,26 +98,34 @@
 
 .main__section--img__container-crystal {
   display: block;
-  top: -120px;
-  right: 80px;
+  top: 0px;
+  right: 150px;
   z-index: -1;
 }
 
 .main__section--img__container-blot_one {
-  top: 150px;
-  left: 220px;
+  top: 250px;
+  left: 270px;
   z-index: -2;
 }
 
 .main__section--img__container-blot_two {
-  top: -100px;
-  right: 37%;
+  top: 50px;
+  right: 43%;
   z-index: -2;
   display: block;
 }
 
+.main__section--img__container-blot_two>img {
+  width: 95%;
+}
+
 .main__section-cards__container {
   margin-top: 20px;
+}
+
+.advantages_title {
+  display: none;
 }
 
 .main__section-cards__container>ul {
@@ -143,7 +151,18 @@
 
 .main__section-card--img_container {}
 
-.main__section-card--img {}
+.main__section-card--img {
+  width: 68px;
+  height: 68px;
+}
+
+.icon_color {
+  fill: #f2f3f4;
+}
+
+.icon_color-stroke {
+  stroke: #f2f3f4;
+}
 
 .main__section-card--txt {
   font-family: "Oranienbaum";
@@ -154,8 +173,8 @@
   text-align: center;
   color: #f2f3f4;
   margin-top: 10px;
+  max-width: 174px;
 }
-
 
 /* PARTNERS */
 
@@ -172,17 +191,17 @@
 }
 
 .title__top {
-  font-family: 'Aquarelle';
+  font-family: "Aquarelle";
   font-weight: 500;
   font-size: 72px;
-  color: #E04504;
+  color: #e04504;
   position: absolute;
   bottom: 0;
   opacity: 0.4;
 }
 
 .title__bottom {
-  font-family: 'Prata';
+  font-family: "Prata";
   font-style: normal;
   font-weight: 400;
   font-size: 48px;
@@ -196,7 +215,7 @@
 }
 
 .safety__text {
-  font-family: 'Oranienbaum';
+  font-family: "Oranienbaum";
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
@@ -237,7 +256,6 @@
   margin-right: 0;
 }
 
-
 /* SERVICES AND PRICES */
 
 .services-and-prices {
@@ -252,8 +270,10 @@
   margin-bottom: 20px;
 }
 
-.item__active span {
-  width: 50px;
+.item__active {}
+
+.arrow-up {
+  display: none;
 }
 
 .services-and-prices--inner {
@@ -275,7 +295,7 @@
 }
 
 .service__list {
-  font-family: 'Oranienbaum';
+  font-family: "Oranienbaum";
   margin-bottom: 30px;
 }
 
@@ -296,7 +316,7 @@
 }
 
 .price__list {
-  font-family: 'Oranienbaum';
+  font-family: "Oranienbaum";
   font-size: 18px;
   display: flex;
   flex-direction: column;
@@ -315,6 +335,12 @@
   margin-bottom: 0;
 }
 
+.service__arrow {}
+
+.price__item--name {}
+
+.price__item--price {}
+
 .services-and-prices--img-block {
   margin-left: 55px;
 }
@@ -324,6 +350,87 @@
 }
 
 /* MAP__BLOCK */
+/* SECTION MASTERS */
+.slider__container {
+  height: 550px;
+  position: relative;
+}
+
+.oneslide {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider-img__contaner {
+  margin-right: 30px;
+}
+
+.slider-txt__container {}
+
+.slider-master_name {
+  font-family: "Oranienbaum";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 33px;
+  line-height: 38px;
+  margin-bottom: 30px;
+}
+
+.slider-master_prof {
+  font-family: "Oranienbaum";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  margin-bottom: 20px;
+}
+
+.slider-txt__container>p {
+  font-family: "Oranienbaum";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  margin-bottom: 20px;
+}
+
+.slider-txt__container>a {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.tel {
+  max-width: 25px;
+  margin-right: 14px;
+}
+
+.contact__block {
+  font-family: "Oranienbaum";
+  display: flex;
+  align-items: center;
+}
+
+.arr__next {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.arr__prev {
+  position: absolute;
+  top: 50%;
+  z-index: 100;
+  cursor: pointer;
+}
+
+/* MAP-BLOCK */
+
+.map__block {}
 
 .card__info {
   background-color: white;
@@ -349,8 +456,9 @@ iframe {
 }
 
 .text__logo {
-  font-family: 'Oranienbaum';
+  font-family: "Oranienbaum";
 }
+
 .card__info--about-items {
   display: flex;
   flex-direction: column;
@@ -358,7 +466,7 @@ iframe {
 }
 
 .card__info--about-item {
-  font-family: 'Oranienbaum';
+  font-family: "Oranienbaum";
   margin-bottom: 24px;
   font-size: 14px;
   line-height: 16px;
@@ -385,4 +493,3 @@ iframe {
 .card__img {
   margin-right: 20px;
 }
-

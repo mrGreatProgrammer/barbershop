@@ -315,12 +315,6 @@
   margin-bottom: 0;
 }
 
-.service__arrow {}
-
-.price__item--name {}
-
-.price__item--price {}
-
 .services-and-prices--img-block {
   margin-left: 55px;
 }
@@ -329,7 +323,7 @@
   border-radius: 4px;
 }
 
-.map__block {}
+/* MAP__BLOCK */
 
 .card__info {
   background-color: white;
@@ -341,6 +335,7 @@
   box-shadow: 3px 5px 15px rgba(224, 69, 4, 0.5);
   padding: 27px;
   z-index: 100;
+  border: 1px solid #E04504;
 }
 
 iframe {
@@ -356,14 +351,10 @@ iframe {
 .text__logo {
   font-family: 'Oranienbaum';
 }
-
-.card__info--about {
-}
-
 .card__info--about-items {
   display: flex;
   flex-direction: column;
-
+  align-items: end;
 }
 
 .card__info--about-item {
@@ -372,18 +363,26 @@ iframe {
   font-size: 14px;
   line-height: 16px;
   max-width: 156px;
-  border-top: 1px solid #000;
+  border-top: 1px solid #00000022;
   padding-top: 14px;
+  display: flex;
+  align-items: flex-start;
 }
 
-.geo {
-  list-style-image: url(../images/icons8-map-marker-100\ 1.png);
+.card__info--about-item img {
+  margin-right: 20px;
 }
 
-.time {
-  list-style-image: url(../images/icons8-clock-100\ 1.png);
+.item__text {
+  line-height: 16px;
 }
 
-.phone {
-  list-style-image: url(../images/icons8-phonelink-ring-100\ 1.png);
+.info__section {
+  display: flex;
+  align-items: center;
 }
+
+.card__img {
+  margin-right: 20px;
+}
+

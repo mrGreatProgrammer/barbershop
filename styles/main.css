@@ -408,7 +408,6 @@
 }
 
 .contact__block {
-  font-family: "Oranienbaum";
   display: flex;
   align-items: center;
 }
@@ -426,7 +425,86 @@
   top: 50%;
   z-index: 100;
   cursor: pointer;
+  margin-right: 20px;
 }
+
+.review {
+  font-family: "Oranienbaum";
+  padding: 50px 0;
+}
+
+.review__inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0 60px;
+}
+
+.review__inner--left-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.title__block {}
+
+.title__top {}
+
+.title__bottom {}
+
+.review__text {
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.review__inner--right-block {
+  min-width: 480px;
+  padding: 43px 90px;
+  border: 1px solid #E04504;
+  border-radius: 4px;
+}
+
+.review__block-inner {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
+.review__block-inner input {
+  font-family: 'Oranienbaum';
+  font-size: 16px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #000000;
+  padding-bottom: 14px;
+  margin-bottom: 40px;
+  max-width: 300px;
+}
+
+.review__block-inner input::placeholder {
+  font-size: 16px;
+  color: #000000;
+}
+
+.review__block-inner input:last-child {
+  margin-bottom: 0;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+}
+
+.add {
+  font-family: 'Oranienbaum';
+  font-size: 18px;
+  background: #E04504;
+  border-radius: 2px;
+  padding: 10px 68px;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
 
 /* MAP-BLOCK */
 

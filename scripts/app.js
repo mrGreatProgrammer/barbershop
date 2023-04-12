@@ -1,26 +1,29 @@
-const arrUp = document.querySelector(".arrow-up"),
-  arrDown = document.querySelector(".arrow-down");
-subMenuEl = document.querySelector(".submenu");
+const arrUp = document.querySelectorAll(".arrow-up"),
+  arrDown = document.querySelectorAll(".arrow-down"),
+  subMenuEl = document.querySelector(".submenu");
 
 
-arrDown.addEventListener("click", function (event) {
-  let target = event.target;
-  if (target) {
-    subMenuEl.style.display = "flex";
-    subMenuEl.style.flexDirection = "column";
-    arrDown.style.display = "none";
-    arrUp.style.display = "block";
-  }
-});
+// arrDown.forEach(arrD => {
+//   arrD.addEventListener("click", function (event) {
+//   let target = event.target;
+//   if (target) {
+//     subMenuEl.style.display = "flex";
+//     subMenuEl.style.flexDirection = "column";
+//     arrDown.style.display = "none";
+//     arrUp.style.display = "block";
+//   }
+// });
+// })
 
-arrUp.addEventListener('click', function(event) {
-  let target = event.target;
-  if (target) {
-    subMenuEl.style.display = 'none';
-    arrUp.style.display = "none";
-    arrDown.style.display = "block";
-  }
-})
+// arrUp.addEventListener('click', function (event) {
+//   let target = event.target;
+//   if (target) {
+//     subMenuEl.style.display = 'none';
+//     arrUp.style.display = "none";
+//     arrDown.style.display = "block";
+//   }
+// })
+
 
 
 
@@ -39,9 +42,9 @@ function sliderInit() {
       infinite: true,
       speed: 500,
       slidesToShow: 1,
-      arrows: false,
-      nextArrow: "",
-      prevArrow: "",
+      arrows: true,
+      nextArrow: ".arr__next",
+      prevArrow: ".arr__prev",
       // variableWidth: true,
       // adaptiveHeight: true
     });

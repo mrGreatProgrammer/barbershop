@@ -172,17 +172,29 @@
 
   /* MASTERS */
   .review__inner {
-    flex-direction: column;
+    /* flex-direction: column; */
+    display: block;
   }
   .review__inner--left-block {
     margin-bottom: 25px;
   }
+  .review__inner--right-block {
+    min-width: none;
+    margin: 0 auto;
+    max-width: 310px;
+    padding: 22px 35px;
+  }
+  .review__text {
+    font-size: 18px;
+  }
+
+
 }
 
 @media screen and (max-width: 500px) {
   /* PARTNERS */
   .title__top {
-    font-size: 50px;
+    font-size: 40px;
   }
   .title__bottom {
     font-size: 20px;
@@ -255,10 +267,11 @@
   }
   .slider__container {
     height: 170px;
-  }
-  
+  }  
   .review__inner--right-block {
-    /* min-width: 290px; */
-
+    max-width: 290px;
+  }
+  .review__block-inner input {
+    padding-bottom: 6px; 
   }
 }

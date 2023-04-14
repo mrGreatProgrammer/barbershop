@@ -1,32 +1,3 @@
-const arrUp = document.querySelectorAll(".arrow-up"),
-  arrDown = document.querySelectorAll(".arrow-down"),
-  subMenuEl = document.querySelector(".submenu");
-
-
-// arrDown.forEach(arrD => {
-//   arrD.addEventListener("click", function (event) {
-//   let target = event.target;
-//   if (target) {
-//     subMenuEl.style.display = "flex";
-//     subMenuEl.style.flexDirection = "column";
-//     arrDown.style.display = "none";
-//     arrUp.style.display = "block";
-//   }
-// });
-// })
-
-// arrUp.addEventListener('click', function (event) {
-//   let target = event.target;
-//   if (target) {
-//     subMenuEl.style.display = 'none';
-//     arrUp.style.display = "none";
-//     arrDown.style.display = "block";
-//   }
-// })
-
-
-
-
 var helpers = {
   addZeros: function (n) {
     return n < 10 ? "0" + n : "" + n;

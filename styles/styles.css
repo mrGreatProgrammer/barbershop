@@ -73,3 +73,11 @@ section {
   font-size: 18px;
   line-height: 21px;
 }
+
+
+.d-none{
+  display: none;
+}
+.d-block{
+  display: block;
+}

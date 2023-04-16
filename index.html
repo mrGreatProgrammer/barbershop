@@ -241,8 +241,85 @@
       <div class="services-and-prices--inner">
 
         <div class="services">
+          
           <ul class="service__lists">
-          </ul>
+            <li class="service__list">
+              <button value="1" onclick="visibleSubmenu(value)" class="service__btn">
+                  <div class="service__list--item">
+                    <p class="service__list--name">Парикмахерские услуги</p>
+                    <div class="arrow-down">
+                      <svg width="19" height="11" viewBox="0 0 19 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path opacity="0.3" d="M0.5 1.00098L9.5 10.001L18.5 1.00098" stroke="black" stroke-linejoin="round"></path>
+                      </svg>
+                    </div>
+                  </div>
+              </button>
+              <ul id="submenu1" class="submenu d-none">
+                <li class="submenu__itema"><button value="1" onclick="visibleRightContent(value)" >
+                  Мужской зал
+                </button>
+                </li>
+                <li class="submenu__itema">
+                <button value="2" onclick="visibleRightContent(value)" >
+                  Женский зал*
+                </button>
+                </li>
+              </ul>
+            </li>
+    <li class="service__list">
+      <button value="2" onclick="visibleSubmenu(value)" class="service__btn">
+          <div class="service__list--item">
+            <p class="service__list--name">Ногтевой сервис*</p>
+            <div class="arrow-down">
+              <svg width="19" height="11" viewBox="0 0 19 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path opacity="0.3" d="M0.5 1.00098L9.5 10.001L18.5 1.00098" stroke="black" stroke-linejoin="round"></path>
+              </svg>
+            </div>
+          </div>
+      </button>
+      <ul id="submenu2" class="submenu d-none">
+        <li class="submenu__itema">
+        <button value="3" onclick="visibleRightContent(value)" >
+          Мужской зал
+        </button>
+        </li>
+        <li class="submenu__itema">
+          <button value="4" onclick="visibleRightContent(value)" >
+            Женский зал*
+          </button>
+        </li>
+      </ul>
+    </li>
+    <li class="service__list">
+      <button value="3" onclick="visibleSubmenu(value)" class="service__btn">
+          <div class="service__list--item">
+            <p class="service__list--name">Брови и ресницы*</p>
+            <div class="arrow-down">
+              <svg width="19" height="11" viewBox="0 0 19 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path opacity="0.3" d="M0.5 1.00098L9.5 10.001L18.5 1.00098" stroke="black" stroke-linejoin="round"></path>
+              </svg>
+            </div>
+          </div>
+      </button>
+      <ul id="submenu3" class="submenu d-none">
+        <li class="submenu__itema">
+          <button value="5" onclick="visibleRightContent(value)" >
+            зал
+          </button>
+          </li>
+        <li class="submenu__itema">
+        <button value="6" onclick="visibleRightContent(value)" >
+          Женский зал*
+        </button>
+        </li>
+      </ul>
+      </li>
+    </ul>
+
+
+
+
+
         </div>
 
         <div class="line__middle"></div>
@@ -351,7 +428,10 @@
               <p class="review__text">Спасибо Вам за обратную связь.</p>
             </div>
 
-            <form class="review__inner--right-block">
+            <form action="https://formsubmit.co/23c53104704b8608a1500240296d5584" method="post" class="review__inner--right-block">
+              <input type="hidden" name="_next" value="https://mrgreatprogrammer.github.io/barbershop/pages/thanks.html">
+              <input type="hidden" name="_subject" value="New submission!">
+              <input type="hidden" name="_autoresponse" value="ваше собственное сообщение">
               <div class="review__block-inner">
                 <input type="text" placeholder="Введите имя">
                 <input type="text" placeholder="Комментарий">

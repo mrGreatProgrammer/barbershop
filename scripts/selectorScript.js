@@ -7,17 +7,32 @@ const serviseListData = [
         id: 1,
         title: "Мужской зал",
         img: "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/751.jpg",
+        optionItems: [
+          { id: 1, title: "Стрижка усов", price: 100 },
+          { id: 2, title: "Бокс", price: 350 },
+          { id: 3, title: "Стрижка бороды", price: 200 },
+          { id: 4, title: "Полубокс", price: 400 },
+          { id: 5, title: "Стрижка под насадку", price: 300 },
+          { id: 6, title: "Стрижка наголо", price: 200 },
+          { id: 7, title: "Школьная стрижка", price: 400 },
+          { id: 8, title: "Модельная стрижка", price: 450 },
+          { id: 9, title: "Дошкольная стрижка", price: 350 },
+          { id: 10, title: "Модельная стрижка “Площадка”", price: 500 },
+        ],
       },
       {
         id: 2,
         title: "Женский зал*",
         img: "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/82.jpg",
+        optionItems: [
+          { id: 1, title: "services-img", price: 124 },
+          { id: 2, title: "services-img", price: 124 },
+          { id: 3, title: "services-img", price: 124 },
+          { id: 4, title: "services-img", price: 124 },
+          { id: 5, title: "services-img", price: 124 },
+          { id: 6, title: "services-img", price: 124 },
+        ],
       },
-    ],
-    optionItems: [
-      { id: 3, title: "" },
-      { id: 4, title: "" },
-      { id: 5, title: "" },
     ],
   },
   {
@@ -25,20 +40,25 @@ const serviseListData = [
     title: "Ногтевой сервис*",
     items: [
       {
-        id: 6,
-        title: "Мужской зал",
+        id: 3,
+        title: " зал",
         img: "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/130.jpg",
+        optionItems: [
+          { id: 1, title: "Стрижка усов", price: 533 },
+          { id: 2, title: "Стрижка усов", price: 533 },
+          { id: 3, title: "Стрижка усов", price: 533 },
+        ],
       },
       {
-        id: 7,
+        id: 4,
         title: "Женский зал*",
         img: "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/114.jpg",
+        optionItems: [
+          { id: 1, title: "Стрижка усов", price: 533 },
+          { id: 2, title: "Стрижка усов", price: 533 },
+          { id: 3, title: "Стрижка усов", price: 533 },
+        ],
       },
-    ],
-    optionItems: [
-      { id: 1, title: "" },
-      { id: 2, title: "" },
-      { id: 3, title: "" },
     ],
   },
   {
@@ -46,79 +66,75 @@ const serviseListData = [
     title: "Брови и ресницы*",
     items: [
       {
-        id: 1,
+        id: 5,
         title: "Мужской зал",
         img: "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/223.jpg",
+        optionItems: [
+          { id: 1, title: "Стрижка усов", price: 313 },
+          { id: 2, title: "Стрижка усов", price: 313 },
+          { id: 3, title: "Стрижка усов", price: 313 },
+        ],
       },
       {
-        id: 2,
+        id: 6,
         title: "Женский зал*",
         img: "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/232.jpg",
+        optionItems: [
+          { id: 1, title: "Стрижка усов", price: 313 },
+          { id: 2, title: "Стрижка усов", price: 313 },
+          { id: 3, title: "Стрижка усов", price: 313 },
+        ],
       },
-    ],
-    optionItems: [
-      { id: 1, title: "" },
-      { id: 2, title: "" },
-      { id: 3, title: "" },
     ],
   },
 ];
 
 const serviceLists = document.querySelector(".service__lists");
+const serviceListsSubmenuEl = document.querySelectorAll(".submenu");
+const servicesPriceListEl = document.querySelector(".price__list");
+const servicesImgEl = document.querySelector(".services-img");
 
-function visibleSubmenu(id) {}
-
-function createServiceItem(id, title, subItems) {
+function createServiceItem(id, title, price) {
   const serviceItem = document.createElement("li");
-  const serviceItemBtn = document.createElement("button");
-  serviceItemBtn.className = "service__btn";
-  serviceItem.className = "service__list";
-  serviceItemBtn.insertAdjacentHTML(
+
+  serviceItem.className = "price__item";
+  serviceItem.insertAdjacentHTML(
     "afterbegin",
-    `<div>
-      <div class="service__list--item">
-        <p class="service__list--name">${title}</p>
-        <div class="arrow-down">
-          <svg width="19" height="11" viewBox="0 0 19 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path opacity="0.3" d="M0.5 1.00098L9.5 10.001L18.5 1.00098" stroke="black"
-            stroke-linejoin="round" />
-          </svg>
-        </div>
-      </div>
-    </div>`
+    `
+    <span class="price__item--name" >${title}</span>
+    <span class="price__item--price" >${price} руб</span>
+    `
   );
 
-  function createSubmenuItem(subItem) {
-    const submenuItemEl = document.createElement("li");
-    submenuItemEl.className = "submenu__itema";
-
-    submenuItemEl.textContent = subItem.title;
-
-    return submenuItemEl;
-  }
-
-  const submenuListEl = document.createElement("ul");
-  submenuListEl.className = "submenyu";
-
-  subItems.map((e) => submenuListEl.appendChild(createSubmenuItem(e)));
-
-  serviceItem.appendChild(serviceItemBtn);
-  submenuListEl.className = "d-none";
-
-  serviceItemBtn.addEventListener("click", () => {
-    console.log(id);
-    submenuListEl.classList.toggle("d-block");
-  });
-
-  serviceItem.appendChild(submenuListEl);
   return serviceItem;
 }
+let currentItem = null;
 
-serviseListData.map((e) =>
-  serviceLists.appendChild(createServiceItem(e.id, e.title, e.items))
-);
+function visibleSubmenu(value) {
+  currentItem = serviseListData.find((e) => e.id == value);
 
-const servicesImg = document.getElementsByClassName("services-img");
+  servicesImgEl.src = currentItem.items[0].img;
 
+  servicesPriceListEl.innerHTML = "";
 
-// console.log(serviceLists);
+  serviceListsSubmenuEl.forEach((e) => e.classList.add("d-none"));
+
+  serviceListsSubmenuEl[
+    serviseListData.findIndex((e) => e.id == value)
+  ].classList.toggle("d-none");
+
+  currentItem.items[0].optionItems.map((e) =>
+    servicesPriceListEl.appendChild(createServiceItem(e.id, e.title, e.price))
+  );
+}
+
+function visibleRightContent(id) {
+  const currentSubmenuItem = currentItem.items.find((e) => e.id == id);
+
+  servicesPriceListEl.innerHTML = "";
+
+  currentSubmenuItem.optionItems.map((e) =>
+    servicesPriceListEl.appendChild(createServiceItem(e.id, e.title, e.price))
+  );
+  servicesImgEl.src = currentSubmenuItem.img;
+}

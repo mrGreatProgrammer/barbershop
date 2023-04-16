@@ -266,15 +266,22 @@
   margin-bottom: 50px;
 }
 
-.submenu {
-  display: none;
-}
 .service__btn {
   background: transparent;
   border: none;
+  width: 100%;
 }
-.submenu__item {
+.submenu__itema {
+  margin-left: 10px;
   margin-bottom: 20px;
+}
+.submenu__itema > button {
+  border: none;
+  background: transparent;
+  font-family: "Oranienbaum";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
 }
 
 .item__active {
@@ -304,8 +311,13 @@
 }
 
 .service__list {
+}
+.service__list--name {
   font-family: "Oranienbaum";
-  margin-bottom: 30px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+
 }
 
 .service__list:last-child {
@@ -342,6 +354,10 @@
 
 .price__item:last-child {
   margin-bottom: 0;
+}
+.services-img {
+  width: 400px;
+  height: 420px;
 }
 
 .service__arrow {

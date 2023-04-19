@@ -35,10 +35,29 @@
         </div>
         <div class="nav__container">
           <button class="burger__menu--btn">
-            <span class="burger__menu--line"></span>
-            <span class="burger__menu--line"></span>
-            <span class="burger__menu--line"></span>
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
           </button>
+          <div class="nav__drop-down menu__open">
+            <ul class="drop__down-list">
+              <li class="drop__down-items">
+                <a href="#partners" class="drop__down-links">Партнёры</a>
+              </li>
+              <li class="drop__down-items">
+                <a href="#service" class="drop__down-links">Услуги</a>
+              </li>
+              <li class="drop__down-items">
+                <a href="#masters" class="drop__down-links">Мастера</a>
+              </li>
+              <li class="drop__down-items">
+                <a href="#comments" class="drop__down-links">Отзывы</a>
+              </li>
+              <li class="drop__down-items">
+                <a href="#contacts" class="drop__down-links">Контакты</a>
+              </li>
+            </ul>
+          </div>
           <nav class="nav">
             <ul class="nav__menu">
               <li class="nav--list__item">
@@ -188,7 +207,7 @@
     </section>
 
     <!-- PARTNERS -->
-    <section class="partners container">
+    <section class="partners container" id="partners">
       <div class="safety">
         <div class="title__block">
           <h2 class="title__top">Безопасность</h2>
@@ -232,7 +251,7 @@
 
 
     <!-- SERVICES AND PRICES -->
-    <section class="services-and-prices container">
+    <section class="services-and-prices container" id="service">
       <div class="title__block">
         <h2 class="title__top">Услуги и цены</h2>
         <h3 class="title__bottom">Услуги и цены</h3>
@@ -316,7 +335,7 @@
     </section>
     <!-- /services-and-prices -->
     <!-- SECTION MASTERS -->
-    <section class="section">
+    <section class="section" id="masters">
       <div class="container">
         <div class="title__block">
           <h2 class="title__top">Мастера</h2>
@@ -329,12 +348,14 @@
             </div>
 
             <div class="arr__next">
-              <svg class="next" width="25" height="44" viewBox="0 0 25 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg class="next" width="25" height="44" viewBox="0 0 25 44" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
                 <path d="M1 43L24 21.5L1 0.5" stroke="black" stroke-linejoin="round" />
               </svg>
             </div>
             <div class="arr__prev">
-              <svg class="prev" width="24" height="44" viewBox="0 0 24 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg class="prev" width="24" height="44" viewBox="0 0 24 44" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
                 <path d="M23.5 1L0.5 22.5L23.5 43.5" stroke="black" stroke-linejoin="round" />
               </svg>
             </div>
@@ -397,7 +418,7 @@
             </section>
           </div>
         </div>
-        <div class="review">
+        <div class="review" id="comments">
           <div class="review__inner">
             <div class="review__inner--left-block">
               <div class="title__block">
@@ -424,7 +445,7 @@
     <!-- /SECTION MASTERS -->
 
     <!-- SECTION MAP -->
-    <section class="map__block relative">
+    <section class="map__block relative" id="contacts">
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16657.605284242924!2d68.79550479902296!3d38.56197428163775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38b5d137ef4b1a19%3A0x324897f0015c7078!2z0KHQsNC00LHQsNGA0LM!5e0!3m2!1sru!2s!4v1681037575077!5m2!1sru!2s"
         width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
@@ -479,11 +500,12 @@
     </section>
     <!-- map__block -->
   </main>
+
   <footer class="footer">
     <div class="container">
       <div class="footer__content">
         <div class="footer__logo">
-          <img src="./images/logo.svg" alt="" class="logo__footer" />
+          <img src="./images/logo.svg" alt="" class="logo logo__footer" />
         </div>
         <nav class="footer__item">
           <ul class="footer__menu-list">
@@ -516,6 +538,7 @@
 
   <script src="./scripts/app.js"></script>
   <script src="./scripts/selectorScript.js"></script>
+  <script src="./scripts/dropDown.js"></script>
 </body>
 
 </html>

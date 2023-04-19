@@ -1,6 +1,7 @@
 /* HEADER */
 .header {
   background: #fff;
+  position: relative;
 }
 
 .header--innner {
@@ -26,15 +27,48 @@
   width: 25px;
   height: 20px;
   position: relative;
+  cursor: pointer;
 }
 
-.burger__menu--line {
-  position: absolute;
-  background: #e04504;
-  height: 3px;
-  width: 25px;
-  right: 0;
+
+
+
+.burger__close {
+  display: none;
+  cursor: pointer;
 }
+
+.close {
+  width: 25px;
+}
+
+
+/* DROP-DOWN */
+.nav__drop-down {
+  display: none;
+  font-family: "Oranienbaum";
+  width: 192px;
+  height: 220px;
+  background-color: #E04504;
+  padding: 45px 63px;
+  position: absolute;
+  top: 80px;
+  right: 0;
+  z-index: 100;
+}
+
+.drop__down-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px 0px;
+}
+
+.drop__down-links {
+  color: #fff;
+  font-size: 16px;
+}
+
+/* -------- */
 
 .nav {
   display: block;
@@ -52,12 +86,15 @@
   margin-right: 0;
 }
 
+
+
 .nav--link {
   font-family: "Oranienbaum";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
+  transition: .5s;
 }
 
 .nav--link:hover {
@@ -147,6 +184,13 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  transition: .6s;
+}
+
+.main__section-card:hover {
+  transform: scale(1.070);
+  box-shadow: 0px 10px 30px 0px #000000cc;
+
 }
 
 .main__section-card--img_container {}
@@ -303,9 +347,12 @@
   margin-bottom: 0;
 }
 
-.arrow-up,
 .arrow-down {
   cursor: pointer;
+  transition: .5s;
+}
+
+.arrow-down:hover {
 }
 
 .line__middle {
@@ -371,7 +418,9 @@
   margin-right: 30px;
 }
 
-.slider-txt__container {}
+.slider-txt__container {
+  font-family: "Oranienbaum";
+}
 
 .slider-master_name {
   font-family: "Oranienbaum";
@@ -419,9 +468,11 @@
 .arr__next {
   position: absolute;
   top: 50%;
-  right: 0;
+  right: -5%;
   z-index: 100;
   cursor: pointer;
+  padding: 10px;
+  transition: .5s;
 }
 
 .arr__prev {
@@ -430,6 +481,15 @@
   z-index: 100;
   cursor: pointer;
   margin-right: 20px;
+  left: -5%;
+  padding: 15px;
+  transition: .5s;
+}
+
+.arr__prev:hover,
+.arr__next:hover {
+  background-color: #e04504aa;
+  border-radius: 7px;
 }
 
 .review {
@@ -471,7 +531,7 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 50px;
-} 
+}
 
 .review__block-inner input {
   font-family: 'Oranienbaum';
@@ -482,15 +542,16 @@
   margin-bottom: 40px;
   max-width: 300px;
   padding-bottom: 14px;
-} 
+}
+
 .review__block-inner input::placeholder {
   font-size: 16px;
   color: #000000;
-} 
+}
 
- .review__block-inner input:last-child {
+.review__block-inner input:last-child {
   margin-bottom: 0;
-} 
+}
 
 .btn {
   display: flex;
@@ -506,7 +567,13 @@
   color: white;
   border: none;
   cursor: pointer;
+  transition: .7s ease-out;
+  border: 2px solid #E04504;
 }
+.add:hover {
+  background-color: #fff;
+  color: #E04504;
+} 
 
 
 /* MAP-BLOCK */
@@ -524,11 +591,19 @@
   padding: 27px;
   z-index: 100;
   border: 1px solid #E04504;
+  transition: .5s;
+}
+.card__info:hover {
+  transform: scale(1.090);
 }
 
 iframe {
   width: 100%;
   height: 100vh;
+}
+
+.logo {
+  max-width: none;
 }
 
 .logo__block {
@@ -573,4 +648,47 @@ iframe {
 
 .card__img {
   margin-right: 20px;
+}
+
+
+/* FOOTER */
+
+.footer {
+  background-color: #fff;
+  padding: 40px 0 10px;
+}
+
+.footer__content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 14px 0;
+  border-top: 1px solid #000;
+}
+
+.footer__logo {
+  margin-right: auto;
+}
+
+.footer__item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__menu-list {
+  display: flex;
+  gap: 60px;
+  padding-right: 20px;
+}
+
+.footer__menu-link {
+  font-family: "Oranienbaum";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  transition: .5s;
+}
+.footer__menu-link:hover {
+  color: #E04504;
 }

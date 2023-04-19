@@ -31,21 +31,9 @@
 }
 
 
-
-
-.burger__close {
-  display: none;
-  cursor: pointer;
-}
-
-.close {
-  width: 25px;
-}
-
-
 /* DROP-DOWN */
 .nav__drop-down {
-  display: none;
+  visibility: hidden;
   font-family: "Oranienbaum";
   width: 192px;
   height: 220px;
@@ -53,7 +41,7 @@
   padding: 45px 63px;
   position: absolute;
   top: 80px;
-  right: 0;
+  right: -800px;
   z-index: 100;
 }
 

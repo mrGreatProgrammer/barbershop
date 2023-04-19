@@ -19,7 +19,8 @@
   height: 80px;
 }
 
-.nav__container {}
+.nav__container {
+}
 
 .burger__menu--btn {
   border: none;
@@ -104,7 +105,7 @@
   padding-bottom: 253px;
 }
 
-.main__section--txt__container>h1 {
+.main__section--txt__container > h1 {
   font-family: "Aquarelle";
   font-style: normal;
   font-weight: 500;
@@ -112,7 +113,7 @@
   line-height: 145px;
 }
 
-.main__section--txt__container>h2 {
+.main__section--txt__container > h2 {
   margin-top: 15px;
   font-family: "Oranienbaum";
   font-style: normal;
@@ -141,7 +142,7 @@
   display: block;
 }
 
-.main__section--img__container-blot_two>img {
+.main__section--img__container-blot_two > img {
   width: 95%;
 }
 
@@ -153,14 +154,15 @@
   display: none;
 }
 
-.main__section-cards__container>ul {
+.main__section-cards__container > ul {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.main__section-cards__container>ul>li {}
+.main__section-cards__container > ul > li {
+}
 
 .main__section-card {
   max-width: 225px;
@@ -181,7 +183,8 @@
 
 }
 
-.main__section-card--img_container {}
+.main__section-card--img_container {
+}
 
 .main__section-card--img {
   width: 68px;
@@ -259,7 +262,8 @@
   position: relative;
 }
 
-.masks {}
+.masks {
+}
 
 .gloves {
   position: absolute;
@@ -294,15 +298,26 @@
   margin-bottom: 50px;
 }
 
-.submenu {
-  display: none;
+.service__btn {
+  background: transparent;
+  border: none;
+  width: 100%;
 }
-
-.submenu__item {
+.submenu__itema {
+  margin-left: 10px;
   margin-bottom: 20px;
 }
+.submenu__itema > button {
+  border: none;
+  background: transparent;
+  font-family: "Oranienbaum";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+}
 
-.item__active {}
+.item__active {
+}
 
 .arrow-up {
   display: none;
@@ -318,7 +333,8 @@
   margin-right: 54px;
 }
 
-.service__lists {}
+.service__lists {
+}
 
 .service__list--item {
   display: flex;
@@ -327,8 +343,13 @@
 }
 
 .service__list {
+}
+.service__list--name {
   font-family: "Oranienbaum";
-  margin-bottom: 30px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+
 }
 
 .service__list:last-child {
@@ -369,12 +390,19 @@
 .price__item:last-child {
   margin-bottom: 0;
 }
+.services-img {
+  width: 400px;
+  height: 420px;
+}
 
-.service__arrow {}
+.service__arrow {
+}
 
-.price__item--name {}
+.price__item--name {
+}
 
-.price__item--price {}
+.price__item--price {
+}
 
 .services-and-prices--img-block {
   margin-left: 55px;
@@ -428,7 +456,7 @@
   margin-bottom: 20px;
 }
 
-.slider-txt__container>p {
+.slider-txt__container > p {
   font-family: "Oranienbaum";
   font-style: normal;
   font-weight: 400;
@@ -437,7 +465,7 @@
   margin-bottom: 20px;
 }
 
-.slider-txt__container>a {
+.slider-txt__container > a {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
@@ -497,11 +525,14 @@
   flex-direction: column;
 }
 
-.title__block {}
+.title__block {
+}
 
-.title__top {}
+.title__top {
+}
 
-.title__bottom {}
+.title__bottom {
+}
 
 .review__text {
   margin-top: 20px;
@@ -511,7 +542,7 @@
 .review__inner--right-block {
   width: 480px;
   padding: 43px 90px;
-  border: 1px solid #E04504;
+  border: 1px solid #e04504;
   border-radius: 4px;
 }
 
@@ -522,7 +553,7 @@
 }
 
 .review__block-inner input {
-  font-family: 'Oranienbaum';
+  font-family: "Oranienbaum";
   font-size: 16px;
   outline: none;
   border: none;
@@ -547,9 +578,9 @@
 }
 
 .add {
-  font-family: 'Oranienbaum';
+  font-family: "Oranienbaum";
   font-size: 18px;
-  background: #E04504;
+  background: #e04504;
   border-radius: 2px;
   padding: 10px 68px;
   color: white;
@@ -563,10 +594,10 @@
   color: #E04504;
 } 
 
-
 /* MAP-BLOCK */
 
-.map__block {}
+.map__block {
+}
 
 .card__info {
   background-color: white;
@@ -583,6 +614,7 @@
 }
 .card__info:hover {
   transform: scale(1.090);
+  border: 1px solid #e04504;
 }
 
 iframe {
@@ -679,4 +711,11 @@ iframe {
 }
 .footer__menu-link:hover {
   color: #E04504;
+}
+
+.d-none{
+  display: none;
+}
+.d-block{
+  display: block;
 }

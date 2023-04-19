@@ -3,73 +3,138 @@ const serviseListData = [
     id: 1,
     title: "Парикмахерские услуги",
     items: [
-      { id: 1, title: "Мужской зал" },
-      { id: 2, title: "Женский зал*" },
+      {
+        id: 1,
+        title: "Мужской зал",
+        img: "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/751.jpg",
+        optionItems: [
+          { id: 1, title: "Стрижка усов", price: 100 },
+          { id: 2, title: "Бокс", price: 350 },
+          { id: 3, title: "Стрижка бороды", price: 200 },
+          { id: 4, title: "Полубокс", price: 400 },
+          { id: 5, title: "Стрижка под насадку", price: 300 },
+          { id: 6, title: "Стрижка наголо", price: 200 },
+          { id: 7, title: "Школьная стрижка", price: 400 },
+          { id: 8, title: "Модельная стрижка", price: 450 },
+          { id: 9, title: "Дошкольная стрижка", price: 350 },
+          { id: 10, title: "Модельная стрижка “Площадка”", price: 500 },
+        ],
+      },
+      {
+        id: 2,
+        title: "Женский зал*",
+        img: "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/82.jpg",
+        optionItems: [
+          { id: 1, title: "services-img", price: 124 },
+          { id: 2, title: "services-img", price: 124 },
+          { id: 3, title: "services-img", price: 124 },
+          { id: 4, title: "services-img", price: 124 },
+          { id: 5, title: "services-img", price: 124 },
+          { id: 6, title: "services-img", price: 124 },
+        ],
+      },
     ],
-    optionItems:  [
-
-    ],
-    img: "hhalfg"
   },
   {
     id: 2,
     title: "Ногтевой сервис*",
     items: [
-      { id: 1, title: "Мужской зал" },
-      { id: 2, title: "Женский зал*" },
+      {
+        id: 3,
+        title: " зал",
+        img: "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/130.jpg",
+        optionItems: [
+          { id: 1, title: "Стрижка усов", price: 533 },
+          { id: 2, title: "Стрижка усов", price: 533 },
+          { id: 3, title: "Стрижка усов", price: 533 },
+        ],
+      },
+      {
+        id: 4,
+        title: "Женский зал*",
+        img: "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/114.jpg",
+        optionItems: [
+          { id: 1, title: "Стрижка усов", price: 533 },
+          { id: 2, title: "Стрижка усов", price: 533 },
+          { id: 3, title: "Стрижка усов", price: 533 },
+        ],
+      },
     ],
   },
   {
     id: 3,
     title: "Брови и ресницы*",
     items: [
-      { id: 1, title: "Мужской зал" },
-      { id: 2, title: "Женский зал*" },
+      {
+        id: 5,
+        title: "Мужской зал",
+        img: "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/223.jpg",
+        optionItems: [
+          { id: 1, title: "Стрижка усов", price: 313 },
+          { id: 2, title: "Стрижка усов", price: 313 },
+          { id: 3, title: "Стрижка усов", price: 313 },
+        ],
+      },
+      {
+        id: 6,
+        title: "Женский зал*",
+        img: "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/232.jpg",
+        optionItems: [
+          { id: 1, title: "Стрижка усов", price: 313 },
+          { id: 2, title: "Стрижка усов", price: 313 },
+          { id: 3, title: "Стрижка усов", price: 313 },
+        ],
+      },
     ],
   },
 ];
 
 const serviceLists = document.querySelector(".service__lists");
+const serviceListsSubmenuEl = document.querySelectorAll(".submenu");
+const servicesPriceListEl = document.querySelector(".price__list");
+const servicesImgEl = document.querySelector(".services-img");
 
-function createServiceItem(id, title, subItems) {
+function createServiceItem(id, title, price) {
   const serviceItem = document.createElement("li");
-  serviceItem.className = "service__list";
+
+  serviceItem.className = "price__item";
   serviceItem.insertAdjacentHTML(
     "afterbegin",
     `
-              <div class="service__list--item">
-
-                <p class="service__list--name">${title}</p>
-                <div class="arrow-down">
-                  <svg width="19" height="11" viewBox="0 0 19 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path opacity="0.3" d="M0.5 1.00098L9.5 10.001L18.5 1.00098" stroke="black"
-                      stroke-linejoin="round" />
-                  </svg>
-                </div>
-              </div>
-              <ul class="submenu">
-                <li class="submenu__item item__active">Мужской зал</li>
-                </ul>
-                `
-    // <li class="submenu__item">Женский зал*</li>
+    <span class="price__item--name" >${title}</span>
+    <span class="price__item--price" >${price} руб</span>
+    `
   );
+
   return serviceItem;
 }
+let currentItem = null;
 
-serviseListData.map((e) =>
-  serviceLists.appendChild(createServiceItem(e.id, e.title, e.items))
-);
+function visibleSubmenu(value) {
+  currentItem = serviseListData.find((e) => e.id == value);
 
-// console.log(arr)
-// serviceLists.appendChild(arr);
+  servicesImgEl.src = currentItem.items[0].img;
 
-// const a = createServiceItem();
-// serviceLists.appendChild(a);
+  servicesPriceListEl.innerHTML = "";
 
-// const arrUp = document.querySelectorAll(".arrow-up"),
-//   serviceItem = document.querySelector(".service__list--item"),
-//   subMenuEl = document.querySelector(".submenu");
+  serviceListsSubmenuEl.forEach((e) => e.classList.add("d-none"));
 
-// serviceItem.addEventListener("click", function (event) {
+  serviceListsSubmenuEl[
+    serviseListData.findIndex((e) => e.id == value)
+  ].classList.toggle("d-none");
 
-// });
+  currentItem.items[0].optionItems.map((e) =>
+    servicesPriceListEl.appendChild(createServiceItem(e.id, e.title, e.price))
+  );
+}
+
+function visibleRightContent(id) {
+  const currentSubmenuItem = currentItem.items.find((e) => e.id == id);
+
+  servicesPriceListEl.innerHTML = "";
+
+  currentSubmenuItem.optionItems.map((e) =>
+    servicesPriceListEl.appendChild(createServiceItem(e.id, e.title, e.price))
+  );
+  servicesImgEl.src = currentSubmenuItem.img;
+}

@@ -46,6 +46,8 @@
   z-index: 100;
 }
 
+
+
 .drop__down-list {
   display: flex;
   flex-direction: column;
@@ -669,7 +671,6 @@ iframe {
 .card__img {
   margin-right: 20px;
 }
-
 
 /* FOOTER */
 

@@ -82,24 +82,8 @@
   }
 
   .menu__open {
-    visibility: visible;
-    position: absolute;
-    right: 0px;
-    display: flex;
-    flex-direction: column;
-    animation-name: burger-visible;
-    animation-duration: .67s;
-    animation-timing-function: ease-in-out;
-  }
-
-  @keyframes burger-visible {
-    0% {
-      transform: translateX(200%);
-    }
-
-    100% {
-      transform: translateX(0);
-    }
+    /* display: block; */
+    transform: translateX(0);
   }
 
   .burger__menu--btn {

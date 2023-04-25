@@ -19,8 +19,7 @@
   height: 80px;
 }
 
-.nav__container {
-}
+.nav__container {}
 
 .burger__menu--btn {
   border: none;
@@ -34,16 +33,29 @@
 
 /* DROP-DOWN */
 .nav__drop-down {
-  visibility: hidden;
+  /* visibility: hidden;
   font-family: "Oranienbaum";
   width: 192px;
   height: 220px;
   background-color: #E04504;
   padding: 45px 63px;
-  position: absolute;
+  position: fixed;
   top: 80px;
-  right: -800px;
-  z-index: 100;
+  transform: translateX(0);
+  z-index: 100; */
+
+  
+  /* display: none; */
+  position: fixed;
+  top: 80px;
+  right: 0;
+  width: 192px;
+  height: 220px;
+  padding: 45px 63px;
+  background-color: #E04504;
+  transform: translateX(100%);
+  transition: transform 0.7s;
+  z-index: 100; 
 }
 
 
@@ -107,7 +119,7 @@
   padding-bottom: 253px;
 }
 
-.main__section--txt__container > h1 {
+.main__section--txt__container>h1 {
   font-family: "Aquarelle";
   font-style: normal;
   font-weight: 500;
@@ -115,7 +127,7 @@
   line-height: 145px;
 }
 
-.main__section--txt__container > h2 {
+.main__section--txt__container>h2 {
   margin-top: 15px;
   font-family: "Oranienbaum";
   font-style: normal;
@@ -144,7 +156,7 @@
   display: block;
 }
 
-.main__section--img__container-blot_two > img {
+.main__section--img__container-blot_two>img {
   width: 95%;
 }
 
@@ -156,15 +168,14 @@
   display: none;
 }
 
-.main__section-cards__container > ul {
+.main__section-cards__container>ul {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.main__section-cards__container > ul > li {
-}
+.main__section-cards__container>ul>li {}
 
 .main__section-card {
   max-width: 225px;
@@ -185,8 +196,7 @@
 
 }
 
-.main__section-card--img_container {
-}
+.main__section-card--img_container {}
 
 .main__section-card--img {
   width: 68px;
@@ -264,8 +274,7 @@
   position: relative;
 }
 
-.masks {
-}
+.masks {}
 
 .gloves {
   position: absolute;
@@ -305,11 +314,13 @@
   border: none;
   width: 100%;
 }
+
 .submenu__itema {
   margin-left: 10px;
   margin-bottom: 20px;
 }
-.submenu__itema > button {
+
+.submenu__itema>button {
   border: none;
   background: transparent;
   font-family: "Oranienbaum";
@@ -318,8 +329,7 @@
   line-height: 23px;
 }
 
-.item__active {
-}
+.item__active {}
 
 .arrow-up {
   display: none;
@@ -335,8 +345,7 @@
   margin-right: 54px;
 }
 
-.service__lists {
-}
+.service__lists {}
 
 .service__list--item {
   display: flex;
@@ -344,8 +353,8 @@
   margin-bottom: 30px;
 }
 
-.service__list {
-}
+.service__list {}
+
 .service__list--name {
   font-family: "Oranienbaum";
   font-weight: 400;
@@ -363,8 +372,7 @@
   transition: .5s;
 }
 
-.arrow-down:hover {
-}
+.arrow-down:hover {}
 
 .line__middle {
   height: 429px;
@@ -392,19 +400,17 @@
 .price__item:last-child {
   margin-bottom: 0;
 }
+
 .services-img {
   width: 400px;
   height: 420px;
 }
 
-.service__arrow {
-}
+.service__arrow {}
 
-.price__item--name {
-}
+.price__item--name {}
 
-.price__item--price {
-}
+.price__item--price {}
 
 .services-and-prices--img-block {
   margin-left: 55px;
@@ -458,7 +464,7 @@
   margin-bottom: 20px;
 }
 
-.slider-txt__container > p {
+.slider-txt__container>p {
   font-family: "Oranienbaum";
   font-style: normal;
   font-weight: 400;
@@ -467,7 +473,7 @@
   margin-bottom: 20px;
 }
 
-.slider-txt__container > a {
+.slider-txt__container>a {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
@@ -527,14 +533,11 @@
   flex-direction: column;
 }
 
-.title__block {
-}
+.title__block {}
 
-.title__top {
-}
+.title__top {}
 
-.title__bottom {
-}
+.title__bottom {}
 
 .review__text {
   margin-top: 20px;
@@ -591,15 +594,15 @@
   transition: .7s ease-out;
   border: 2px solid #E04504;
 }
+
 .add:hover {
   background-color: #fff;
   color: #E04504;
-} 
+}
 
 /* MAP-BLOCK */
 
-.map__block {
-}
+.map__block {}
 
 .card__info {
   background-color: white;
@@ -614,6 +617,7 @@
   border: 1px solid #E04504;
   transition: .5s;
 }
+
 .card__info:hover {
   transform: scale(1.090);
   border: 1px solid #e04504;
@@ -710,13 +714,15 @@ iframe {
   line-height: 21px;
   transition: .5s;
 }
+
 .footer__menu-link:hover {
   color: #E04504;
 }
 
-.d-none{
+.d-none {
   display: none;
 }
-.d-block{
+
+.d-block {
   display: block;
 }

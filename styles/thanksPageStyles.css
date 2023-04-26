@@ -1,0 +1,28 @@
+.thanksPage__inner_box {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.thanksPage__title {
+  margin-bottom: 55px;
+  font-family: "Prata";
+}
+.thanksPage__btn {
+  font-size: 18px;
+  background: #e04504;
+  border-radius: 2px;
+  padding: 10px 68px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: 0.7s ease-out;
+  border: 2px solid #e04504;
+  font-family: "Prata";
+}
+
+.thanksPage__btn:hover {
+  background-color: #fff;
+  color: #e04504;
+}

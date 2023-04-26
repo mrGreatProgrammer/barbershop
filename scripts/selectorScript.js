@@ -111,7 +111,8 @@ function createServiceItem(id, title, price) {
 
   return serviceItem;
 }
-let currentItem = null;
+
+let currentItem = serviseListData[0];
 
 function visibleSubmenu(value) {
   currentItem = serviseListData.find((e) => e.id == value);

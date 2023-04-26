@@ -287,7 +287,9 @@
 
   .next,
   .prev {
+    display: none;
     width: 20px;
+
   }
 
   .tel {
